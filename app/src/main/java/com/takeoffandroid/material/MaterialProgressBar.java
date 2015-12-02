@@ -233,6 +233,10 @@ import android.widget.ImageView;
 
     @Override
     final  public void setImageDrawable(Drawable drawable) {
+        super.setImageDrawable(null);
+        super.setImageDrawable(drawable);
+        mProgressDrawable.setAlpha(255);
+        mProgressDrawable.start();
     }
 
     public void setAnimationListener(Animation.AnimationListener listener) {
